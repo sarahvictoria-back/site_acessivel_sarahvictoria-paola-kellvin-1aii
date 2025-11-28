@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Acessível</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+<section class="top-control" aria-label="Controles de Navegação e Acessibilidade">
+    <section class="nav-shortcuts" aria-label="Atalhos de navegação">
+        <button onclick="goTo('conteudo-principal')">Ir para o conteúdo [1]</button>
+        <button onclick="goTo('menu')">Ir para o menu [2]</button>
+        <button onclick="goTo('search-box')">Ir para a busca [3]</button>
+        <button onclick="goTo('rodape')">Ir para o rodapé [4]</button>
+    </section>
+
+    <section class="accessibility-tools" aria-label="Ferramentas de acessibilidade">
+        <button onclick="toggleContrast()">Alto Contraste</button>
+        <button onclick="changeFontSize(1)">A+</button>
+        <button onclick="changeFontSize(-1)">A-</button>
+        <button onclick="resetFontSize()">A0</button>
+    </section>
+
+</section>
+    <header>
+        <h1>Meu Site Acessível</h1>
+        <form class="search-form" role="search" aria-label="Formulário de busca">
+            <label for="search-box" class="sr-only">Buscar:</label>
+            <input id="search-box" type="text" placeholder="Buscar..." aria-label="Campo de busca">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+    <nav id="menu" aria-label="Menu principal">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <main id="conteudo-principal">
+        <div class="main-content-grid">
+            <section class="content-block">
+                <h2>Bolsonaro começa a cumprir pena de 27 anos de prisão em sala da Polícia Federal</h2>
+                <figure class="float-figure">
+                    <img src="4a5c5090-ca25-11f0-a892-01d657345866.jpg (1).webp"
+                        alt="Bolsonaro">
+                        A Primeira Turma do Supremo Tribunal Federal (STF) apoiou por unanimidade a decisão do ministro Alexandre de Moraes de
+                        encerrar o processo que condenou o ex-presidente Jair Bolsonaro (PL) a mais de 27 anos de prisão por tentativa de golpe
+                        de Estado e outros crimes.
+                        Moraes havia tomado a decisão mais cedo nesta terça-feira (25/11), ordem que foi apoiada pelos outros ministros da
+                        Primeira Turma em julgamento virtual à noite. Com isso, terá início a execução da pena. Moraes já havia determinado que
+                        o ex-presidente fique na mesma sala especial
+                        onde já estava preso preventivamente desde sábado (22/11), na Superintendência da Polícia Federal em Brasília.
+                        <li><a href="https://www.bbc.com/portuguese/articles/cz0nme79gzzo">Acesse Aqui</a></li>
+                        <figcaption class="sr-only">Ícone Bolsonaro.</figcaption>
+                </figure>
+            </section>
+
+            <section class="content-block">
+                <h2>'Stranger Things': tudo o que você precisa saber sobre a série da Netflix</h2>
+                <figure class="float-figure">
+                    <img src="d916b340-caaa-11f0-8808-c52ce2d6ce05.jpg.webp"
+                        alt="Stranger Things">
+                        Os primeiros quatro episódios da quinta temporada de Stranger Things estreiam no Brasil nesta quarta-feira (26/11), às
+                        22h (horário de Brasília), na Netflix. O horário, que pode ser considerado tarde por alguns fãs, tem como objetivo evitar spoilers, já que os episódios vão ao
+                        ar simultaneamente no mundo todo. No Reino Unido, por exemplo, será 1h de quinta-feira (27/11).  
+                        Mas, atenção: vai ser preciso esperar até o Natal para assistir aos episódios cinco, seis e sete. E temporada final só
+                        será concluída com seu oitavo episódio, The Rightside Up, no último dia do ano, 31 de dezembro.
+                        Isso significa que toda a história de Stranger Things será contada até o fim de 2025, mas quantos de seus personagens
+                        estarão vivos até lá?
+                        <li><a href="https://www.bbc.com/portuguese/articles/cy079dzyr1jo">Acesse Aqui</a></li>
+                    <figcaption class="sr-only">Ícone Stranger Things.</figcaption>
+                </figure>
+            </section>
+
+            <section class="content-block">
+                <h2>Palmeiras x Flamengo: seria a maior final de Libertadores do século?</h2>
+                <figure class="float-figure">
+                    <img src="1006745681-img5468.webp"
+                        alt="Imagem de Jogo">
+                        Neste sábado (29), Palmeiras e Flamengo protagonizarão a final da Copa Libertadores de 2025, e desde quando foi definida
+                        essa final, logo de cara já chamava a atenção pelo peso que esse título carrega, muito por conta de hoje Palmeiras e
+                        Flamengo serem as duas principais equipes do continente, e que estão sempre disputando os títulos nas cabeças.
+                        A final também tem um peso extra para cada equipe, pois qualquer um que vencer, será o primeiro tetra-campeão brasileiro
+                        da história da Libertadores, se isolando como o maior vencedor do torneio, por isso também tem esse fator a mais.
+                        <li><a href=" https://www.terra.com.br/esportes/futebol/libertadores/palmeiras-x-flamengo-seria-a-maior-final-de-libertadores-do-seculo,25ad93932f9aeb8da79db71bb98bf68awc22dg7a.html">Acesse Aqui</a></li>
+                    <figcaption class="sr-only">Ícone Palemiras e Flamengo.</figcaption>
+                </figure>
+            </section>
+
+            <section class="content-block">
+                <h2>O maior evento de Drones Da Bahia</h2>
+                <figure class="float-figure">
+                    <img src="IMG_1177.JPG" alt="Imagem OBADRONES">
+                    A 1ª Olimpíada Baiana de Drones (OBADRONES) foi um evento educacional realizado no IF Baiano Campus Guanambi entre 21 e
+                    23 de agosto de 2025. O evento, organizado pelo Centro de Estudos Tecnológicos em Informática e Agronomia (CETEIA), teve
+                    como objetivo promover o desenvolvimento de tecnologias de drones e habilidades STEAM através de competições, oficinas e
+                    palestras. A primeira edição foi gratuita, aberta ao público e contou com a participação de estudantes e professores de
+                    escolas de ensino médio e superior, além de empresas parceiras.
+                    <li><a href="https://www.obadrones.com.br/#:~:text=Sobre%20o%20evento,a%20seguirem%20carreiras%20cient%C3%ADfico%2Dtecnol%C3%B3gicas.">Acesse Aqui</a></li>
+                    <figcaption class="sr-only">Ícone OBADRONES.</figcaption>
+                </figure>
+            </section>
+
+        </div>
+        <aside>
+            <h3>Destaques</h3>
+            <ul>
+                <li><a href="#">Notícia 1</a></li>
+                <li><a href="#">Notícia 2</a></li>
+                <li><a href="#">Notícia 3</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>© 2025 - Meu Site Acessível. Todos os direitos reservados.</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Twitter">
+                <img src="download.png" alt="Twitter">
+            </a>
+            <a href="#" aria-label="Instagram">
+                <img src="download (1).png" alt="Instagram">
+            </a>
+            <a href="#" aria-label="Facebook">
+                <img src="download (2).png" alt="Facebook">
+            </a>
+        </div>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-widget"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/content/wrapper.js" type="text/javascript"></script>
+    <script>
+        new window.acessibilidade.VlibrasClient({
+            rootPath: 'https://vlibras.gov.br/app',
+        });
+    </script>
+</body>
+
+</html>
